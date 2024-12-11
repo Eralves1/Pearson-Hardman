@@ -33,7 +33,7 @@ img {
     background-size: cover;
     background-position: center;
     color: var(--primary-text-color);
-    /* rem  e  em   são 16pixel, o em sozinho = tamanho da fonte tag pai,  rem é r de root, ref a tag body */
+    /* REM e  EM  são 16pixel, o em sozinho = tamanho da fonte tag pai,  rem é r de root, ref a tag body */
     margin-bottom: 2rem;   
 
 }
@@ -70,3 +70,10 @@ img {
     padding: 1rem;
  }
 
+ /* fazer o design do quadrado logo abaixo do titulo principal Pearson Hardman */
+.square{
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: var(--main-color);
+}
