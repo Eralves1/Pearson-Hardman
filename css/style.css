@@ -70,10 +70,62 @@ img {
     padding: 1rem;
  }
 
+ /* banner slogan de propaganda  */
+ .banner.active{ 
+    /* banner ativo é mostrado */
+    opacity: 1; 
+    
+ }
+ .banner{
+    /* limite da caixa 50% da margem */
+    max-width: 45%;
+    opacity: 0;
+    padding: 4rem;
+    position: absolute;
+ }
+ 
+ .banner h2{
+    font-size: 4rem;
+    margin-bottom: 1.2rem;
+    /* position relative é relativo a caixa. */
+    position: relative;
+    /* o z-index define o eixo "z" de profundidade 3d na frente ou atrás */
+    z-index: 2;
+ }
+
+ .banner p{
+    font-size: 1.5rem;
+ }
  /* fazer o design do quadrado logo abaixo do titulo principal Pearson Hardman */
 .square{
     display: block;
     width: 150px;
     height: 150px;
     background-color: var(--main-color);
+    /* RELATIVE - sempre em relação a caixa 
+       ABSOLUTE - é em relação a um elemento especifico dentro da caixa */
+    /* relativo a caixa , o position absolute no square faz com que o conteudo do banner adentre o square */
+    position: absolute;
+    left: 20px;
+    top: 40px;
+    z-index:1;
+}
+
+.dots{
+    display:flex;
+    gap: 2rem;
+    /*position absolute em relação a header, pelo position absolute consegue mexer com as 4 posições cima, baixa, esquerda, direita */
+    position: absolute;
+    bottom: 9rem;
+    left: 3rem;
+}
+
+.dot{
+    width: 20px;
+    height: 20px;
+    background-color: var(--secondary-color);
+}
+
+.dot.active{
+    background-color: var(--secondary-bg-color);
 }
